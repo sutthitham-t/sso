@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link href="/css/style.css" rel="stylesheet">
+    <title>ตรวจสอบสิทธิ์ประกันสังคม</title>
+</head>
+<body>
+    <div class="container mt-3 mx-auto">
+        <h3 class="mt-5 text-center">ตรวจสอบสิทธิ์ประกันสังคม</h3>
+        <form id="search">
+            <div class="input-group mt-4 mx-auto w-100 inputw">
+                <input type="text" id="idCard" class="form-control" maxlength="13" placeholder="กรอกเลขประจำตัวบัตรประชาชน">
+                <button class="btn btn-dark" type="submit" id="submit">ค้นหา</button>
+            </div>
+        </form>
+        <table id="showData" class="table table-striped mt-5 mx-auto"></table>
+    </div>
+    <div class="mt-5 text-center text-danger visually-hidden" id="note">หมายเหตุ: กรณีมีข้อสงสัย ติดต่อสายด่วนประกันสังคม โทร. 1506</div>
+    <script src="/js/script.js"></script>
+</body>
+</html>

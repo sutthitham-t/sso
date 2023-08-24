@@ -1,0 +1,15 @@
+TypeError: fetch failed
+    at Object.fetch (node:internal/deps/undici/undici:11576:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AZCaptcha.getResultTask (file:///home/thong/Desktop/SSO/src/lib/azCaptcha/AZCaptcha.js:35:30)
+    at async deCodeCaptcha (file:///home/thong/Desktop/SSO/src/lib/azCaptcha/index.js:25:24)
+    at async loginSSO (file:///home/thong/Desktop/SSO/src/loginSSO.js:10:25)
+    at async checkSSO (file:///home/thong/Desktop/SSO/src/index.js:32:30) {
+  cause: ConnectTimeoutError: Connect Timeout Error
+      at onConnectTimeout (node:internal/deps/undici/undici:8522:28)
+      at node:internal/deps/undici/undici:8480:50
+      at Immediate._onImmediate (node:internal/deps/undici/undici:8511:13)
+      at process.processImmediate (node:internal/timers:478:21) {
+    code: 'UND_ERR_CONNECT_TIMEOUT'
+  }
+}
